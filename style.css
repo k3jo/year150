@@ -59,20 +59,39 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-family: 'Lato', sans-serif;
-
 }
 .quiz {
 	letter-spacing: 5px;
 	font-size: 30px;
 }
-#start {
-	border: none;
-	background: #fff;
-	color: red;
-	padding: 10px 25px;
+.start-container{
+	position: relative;
+}
+.leaf {
+	width: 150px;
+	fill: #fff;
+	background: none;
+}
+#start-button {
+	position: absolute;
+	left: 50%;
+	margin-left: -18px;
+	top: 50%;
+	margin-top: -32px;
+}
+#start span {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 700;
+	position: absolute;
+	left: 50%;
+	margin-left: -24px;
+	top: 50%;
+	margin-top: -32px;
+	/* Color fallback */
+	color: red;
+/*	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
 }
 .game-container {
 	position: relative;
