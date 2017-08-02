@@ -39,18 +39,40 @@ h2 {
 	background: url(i/warren-wong-323107.jpg);
 	background-size: cover;
 }
-.hero .container {
+.hero-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+.hero-body .container div {
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 	padding: 20px 0;
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	margin-bottom: 50px;
 }
 h1 {
 	color: #fff;
+	font-weight: 700;
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-family: 'Lato', sans-serif;
+
+}
+.quiz {
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+#start {
+	border: none;
+	background: #fff;
+	color: red;
+	padding: 10px 25px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 .game-container {
 	position: relative;
@@ -106,6 +128,7 @@ h1 {
 	background: #2F4F4F;
 	padding: 20px;
 }
+
 .btn {
 	display: block;
 	margin: 0 auto;
