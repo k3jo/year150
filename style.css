@@ -32,11 +32,74 @@ h2 {
 .wrapper {
 	max-width: 600px;
 	margin: 0 auto;
+	/*transform: skewY(10deg);*/
+}
+.hero {
+	height: 100vh;
+	background: url(i/warren-wong-323107.jpg);
+	background-size: cover;
+}
+.hero .container {
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	padding: 20px 0;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+h1 {
+	color: #fff;
+}
+.game-container {
+	position: relative;
+}
+.game-container .container {
+	background: #fff;
+	padding: 50px;
+}
+.stripe {
+	height: 300px;
+	background: teal;
+	margin-top: -40px;
+	transform: skewY(-20deg);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.stripe2 {
+	height: 300px;
+	background: deeppink;
+	margin-top: -40px;
+	transform: skewY(20deg);
+	position: absolute;
+	width: 100%;
+}
+.stripe3 {
+	height: 300px;
+	background: purple;
+	margin-top: -40px;
+	transform: skewY(5deg);
+	position: absolute;
+	top: 10px;
+	width: 100%;
+}
+.stripe4 {
+	height: 300px;
+	background: goldenrod;
+	margin-top: -40px;
+	transform: skewY(-10deg);
+	position: absolute;
+	top: 10px;
+	width: 100%;
 }
 .card-container {
 	margin: 25px 0;
 	border: 1px solid gray;
 	padding-bottom: 20px;
+	background: #fff;
 }
 .card-header {
 	color: white;

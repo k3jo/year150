@@ -2,35 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Flashcard thing</title>
+	<title>Year 150 Quiz</title>
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 
-<!-- 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
 
 
 <body>
-
-	<div class="wrapper">
-		<div class="card-container">
-			<div class="card-header">
-				<h2>Question</h2>
+	
+	<section class="hero">
+		<div class="hero-body">
+			<div class="container">
+				<h1>Canada 150 Quiz</h1>
+				<button id="start">Start</button>	
+				
 			</div>
+			
+		</div>
+	</section>
+
+	<section class="game-container">
+		<div class="stripe"></div>
+		<div class="stripe2"></div>
+		<div class="stripe3"></div>
+		<div class="stripe4"></div>
+
+		<div class="container">
+			<div class="wrapper">
+				<div class="card-container">
+					<div class="card-header">
+						<h2>Question</h2>
+					</div>
 
 
-			<div class="option-container">
+					<div class="option-container">
+					</div>
+					<button id="submit" class="btn hidden">Submit</button>				
+
+
+				</div>
+				<div class="feedback-container">
+					<p id='feedback'></p>
+					<p id='score-mamma'>Score: <span id='score'></span></p>				
+				</div>
 			</div>
-			<button id="submit" class="btn hidden">Submit</button>				
-
-
+			
 		</div>
-		<div class="feedback-container">
-			<p id='feedback'></p>
-			<p id='score-mamma'>Score: <span id='score'></span></p>				
-		</div>
-	</div>
+		
+	</section>
+
 	
 
 
