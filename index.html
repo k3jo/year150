@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
 	
 	<section class="hero">
@@ -38,24 +36,24 @@
 
 		<div class="container" id="game">
 			<div class="wrapper">
+				<p id='feedback'></p>
+				<p id="final-score"></p>
 				<div class="card-container">
 					<div class="card-header">
-						<h2></h2>
+						<h2 class="question">Question</h2>
 					</div>
 
 					<div class="option-container"></div>
 					<button id="submit" class="btn hidden">Submit</button>	
-					<p id='feedback'></p>
 			
-
 				</div>
 				<div class="score-container">
-					<p id='score-mamma'>Score: <span id='score'></span></p>				
+					<p>Score: <span id='score'></span></p>				
 				</div>
+				<button class="btn hidden" id="again">Play Again</button>
 			</div>
 			
 		</div>
-		
 	</section>
 
 	

@@ -175,7 +175,6 @@ h1, h2, h3, p {
 }
 
 body {
-  text-align: center;
   font-family: 'Droid Serif', arial, serif;
 }
 
@@ -203,15 +202,18 @@ h2 {
   border-bottom: 3px solid #fff;
   padding: 20px 0;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .hero h1 {
   color: #fff;
-  font-weight: 700;
-  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
 }
 
 .hero .quiz {
@@ -238,8 +240,10 @@ h2 {
 
 .hero #start span {
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #fff;
   position: absolute;
   left: 50%;
   margin-left: -24px;
@@ -253,6 +257,7 @@ h2 {
 
 .game-container {
   position: relative;
+  text-align: center;
 }
 
 .game-container .stripe {
@@ -303,52 +308,60 @@ h2 {
 .game-container .wrapper {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
 }
 
-.game-container h2 {
-  text-align: center;
-}
-
-.card-container {
+.game-container .card-container {
   margin: 25px 0;
   padding-bottom: 20px;
   background: #fff;
 }
 
-.card-container .card-header {
+.game-container .card-header {
   padding: 20px;
+}
+
+.game-container h2.question {
   text-align: center;
 }
 
-.card-container h2 {
-  text-align: center;
-}
-
-.btn {
-  display: block;
-  margin: 0 auto;
-  margin-top: 25px;
-}
-
-input {
+.game-container input {
   margin: 10px 0;
   cursor: pointer;
 }
 
-label {
+.game-container label {
   font-family: 'Lato', sans-serif;
 }
 
-.option-container {
+.game-container .option-container {
   padding: 20px;
 }
 
-.score-container {
+.game-container .score-container {
   background: #2F4F4F;
   color: white;
   margin: 25px 0;
   padding: 20px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: purple;
+  color: #fff;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
 }
 
 #feedback {

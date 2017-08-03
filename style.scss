@@ -1,35 +1,16 @@
-/*
-=============================================================================
-                   Normalize, border box and clearfix
-=============================================================================
-*/
-
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
-input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
-
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
+@import 'setup';
 
 h1, h2, h3, p {
 	margin: 0;
 }
 
 body{
-	text-align: center;
 	font-family: 'Droid Serif', arial, serif;
 }
 h2 {
 	font-family: 'Droid Serif', arial, serif;
 	font-size: 30px;
 }
-
 .hero {
 	height: 100vh;
 	background: url(i/warren-wong-323107.jpg);
@@ -45,15 +26,14 @@ h2 {
 			border-bottom: 3px solid #fff;
 			padding: 20px 0;
 			margin-bottom: 50px;
+			text-align: center;
 		}
 	}
 	h1 {
 		color: #fff;
-		font-weight: 700;
-		font-size: 50px;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		font-family: 'Lato', sans-serif;
+		@include lato (50px, uppercase);
 	}
 	.quiz {
 		letter-spacing: 5px;
@@ -74,9 +54,7 @@ h2 {
 		background: none;
 	}
 	#start span {
-		font-family: 'Lato', sans-serif;
-		text-transform: uppercase;
-		font-weight: 700;
+		@include lato(16px, uppercase);
 		position: absolute;
 		left: 50%;
 		margin-left: -24px;
@@ -92,6 +70,7 @@ h2 {
 
 .game-container {
 	position: relative;
+	text-align: center;
 	.stripe {
 		height: 300px;
 		background: rgba(0,128,128, 0.8);
@@ -135,56 +114,54 @@ h2 {
 	.wrapper {
 		max-width: 600px;
 		margin: 0 auto;
-		text-align: center;
+		// text-align: center;
 	}
-	h2 {
-		text-align: center;
+	.card-container {
+		margin: 25px 0;
+		padding-bottom: 20px;
+		background: #fff;
 	}
-}
-
-
-.card-container {
-	margin: 25px 0;
-	padding-bottom: 20px;
-	background: #fff;
 	.card-header {
 		padding: 20px;
+		// text-align: center;
+	}
+	h2.question {
 		text-align: center;
 	}
-	h2 {
-		text-align: center;
+	input {
+		margin: 10px 0;
+		cursor: pointer;
+	}
+	label {
+		font-family: 'Lato', sans-serif;
+	}
+	.option-container {
+		padding: 20px;
+	}
 
+	.score-container {
+		background: #2F4F4F;
+		color: white;
+		margin: 25px 0;
+		padding: 20px 0;
+		@include lato(16px, uppercase);
 	}
 }
 
-
 .btn {
+	border: none;
 	display: block;
 	margin: 0 auto;
 	margin-top: 25px;
-}
-input {
-	margin: 10px 0;
-	cursor: pointer;
-}
-label {
-	font-family: 'Lato', sans-serif;
-}
-.option-container {
-	padding: 20px;
+	background: purple;
+	color: #fff;
+	padding: 10px 25px;
+	@include lato(16px, uppercase);
 }
 
-.score-container {
-	background: #2F4F4F;
-	color: white;
-	margin: 25px 0;
-	padding: 20px 0;
-}
 #feedback {
 	margin-bottom: 15px;
 }
-
-
 
 .hidden {
 	display:none;
