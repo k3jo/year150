@@ -362,6 +362,13 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+  position: relative;
+}
+
+.btn:hover,
+.btn:focus {
+  top: -3px;
+  box-shadow: 0 3px 0 0 #FF1493;
 }
 
 #feedback {

@@ -157,8 +157,13 @@ h2 {
 	color: #fff;
 	padding: 10px 25px;
 	@include lato(16px, uppercase);
+	position: relative;
 }
-
+.btn:hover,
+.btn:focus {
+	top: -3px;
+	box-shadow: 0 3px 0 0 #FF1493;
+}
 #feedback {
 	margin-bottom: 15px;
 }
