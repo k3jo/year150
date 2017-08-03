@@ -15,41 +15,41 @@ app.lessonPlan = [
 		answer: 'John McCrae', 
 		choices: ['John McCrae', 'Jean Nicollet', 'John Abbott' ]
 	},
-	// {
-	// 	question: 'Who talks to Henry VII about the fishery stocks in Newfoundland?', 
-	// 	answer: 'John Cabot',
-	// 	choices: ['Jean Nicollet', 'John Cabot', 'Jacques Cartier' ]
-	// },
-	// {
-	// 	question: 'Who invented basketball?', 
-	// 	answer: 'James Naismith', 
-	// 	choices: ['James Naismith', 'Sandford Flemin', 'Nat Taylor' ]
-	// },
-	// {
-	// 	question: 'Which of these artists was not part of the Group of Seven?', 
-	// 	answer: 'Tom Thomson', 
-	// 	choices: ['Tom Thomson', 'J. E. H. MacDonald', 'Franklin Carmichael' ]
-	// },
-	// {
-	// 	question: 'What is the official motto of Canada?', 
-	// 	answer: 'From sea to sea', 
-	// 	choices: ['From sea to sea', 'Strong and free', 'Unity and freedom' ]
-	// },
-	// {
-	// 	question: 'Which two animals are featured on the Canadian Coat of Arms?',
-	// 	answer: 'Lion and unicorn',
-	// 	choices: ['Lion and unicorn', 'Bear and Lion', 'Unicorn and beaver']
-	// },
-	// {
-	// 	question: 'Who is the longest-serving Canadian prime minister?', 
-	// 	answer: 'William Lyon Mackenzie King', 
-	// 	choices: ['William Lyon Mackenzie King', 'Pierre Trudeau', 'John A. MacDonald' ]
-	// },
-	// {
-	// question: 'What city was the first capital of the province of Canada in 1841?',
-	// answer: 'Kingston',
-	// choices: ['Kingston', 'Ottawa', 'Montreal']
-	// },
+	{
+		question: 'Who talks to Henry VII about the fishery stocks in Newfoundland?', 
+		answer: 'John Cabot',
+		choices: ['Jean Nicollet', 'John Cabot', 'Jacques Cartier' ]
+	},
+	{
+		question: 'Who invented basketball?', 
+		answer: 'James Naismith', 
+		choices: ['James Naismith', 'Sandford Flemin', 'Nat Taylor' ]
+	},
+	{
+		question: 'Which of these artists was not part of the Group of Seven?', 
+		answer: 'Tom Thomson', 
+		choices: ['Tom Thomson', 'J. E. H. MacDonald', 'Franklin Carmichael' ]
+	},
+	{
+		question: 'What is the official motto of Canada?', 
+		answer: 'From sea to sea', 
+		choices: ['From sea to sea', 'Strong and free', 'Unity and freedom' ]
+	},
+	{
+		question: 'Which two animals are featured on the Canadian Coat of Arms?',
+		answer: 'Lion and unicorn',
+		choices: ['Lion and unicorn', 'Bear and Lion', 'Unicorn and beaver']
+	},
+	{
+		question: 'Who is the longest-serving Canadian prime minister?', 
+		answer: 'William Lyon Mackenzie King', 
+		choices: ['William Lyon Mackenzie King', 'Pierre Trudeau', 'John A. MacDonald' ]
+	},
+	{
+	question: 'What city was the first capital of the province of Canada in 1841?',
+	answer: 'Kingston',
+	choices: ['Kingston', 'Ottawa', 'Montreal']
+	},
 
 ];
 
