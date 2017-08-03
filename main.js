@@ -8,7 +8,7 @@ app.lessonPlan = [
 	{
 		question: 'What does Kanada mean?', 
 		answer: 'the village', 
-		choices: ['the village', 'the forest', 'the nation' ]
+		choices: ['the Village', 'the Forest', 'the Nation' ]
 	},
 	{
 		question: 'Who wrote In Flander\'s Fields?', 
@@ -116,7 +116,7 @@ $('button#submit').on('click', function(e){
 		app.nextLesson();
 
 	} else {
-		app.$feedback.text('wrong');
+		app.$feedback.text('Wrong, the correct answer is ' + app.lessonPlan[app.currentLesson].answer );
 		// console.log('wrong', app.userScore + app.selected + ' app.currentLesson: ' + app.currentLesson);
 
 		app.selected = '';
