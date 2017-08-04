@@ -195,6 +195,7 @@ h2 {
   align-items: center;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 
 .hero .hero-body .container div {
@@ -203,6 +204,7 @@ h2 {
   padding: 20px 0;
   margin-bottom: 50px;
   text-align: center;
+  display: inline-block;
 }
 
 .hero h1 {
@@ -214,6 +216,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+  margin: -10px;
 }
 
 .hero .quiz {
@@ -305,11 +308,6 @@ h2 {
   padding: 50px;
 }
 
-.game-container .wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 .game-container .card-container {
   margin: 25px 0;
   padding-bottom: 20px;
@@ -318,6 +316,7 @@ h2 {
 
 .game-container .card-header {
   padding: 20px;
+  box-shadow: none;
 }
 
 .game-container h2.question {
@@ -349,6 +348,12 @@ h2 {
   color: #fff;
 }
 
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .btn {
   border: none;
   display: block;
@@ -373,6 +378,25 @@ h2 {
 
 #feedback {
   margin-bottom: 15px;
+}
+
+.epilogue {
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  text-transform: initial;
+  font-weight: 700;
+  color: #fff;
+  color: slategray;
+}
+
+.epilogue .container {
+  background: #fff;
+  padding-bottom: 50px;
+}
+
+.epilogue a {
+  color: slategray;
+  border-bottom: 1px dotted slategray;
 }
 
 .hidden {

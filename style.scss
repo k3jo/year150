@@ -21,12 +21,14 @@ h2 {
 		align-items: center;
 		justify-content: center;
 		align-content: center;
+		text-align: center;
 		.container div {
 			border-top: 3px solid #fff;
 			border-bottom: 3px solid #fff;
 			padding: 20px 0;
 			margin-bottom: 50px;
 			text-align: center;
+			display: inline-block;
 		}
 	}
 	h1 {
@@ -34,6 +36,7 @@ h2 {
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		@include lato (50px, uppercase);
+		margin: -10px;
 	}
 	.quiz {
 		letter-spacing: 5px;
@@ -111,11 +114,6 @@ h2 {
 		background: #fff;
 		padding: 50px;
 	}
-	.wrapper {
-		max-width: 600px;
-		margin: 0 auto;
-		// text-align: center;
-	}
 	.card-container {
 		margin: 25px 0;
 		padding-bottom: 20px;
@@ -123,6 +121,7 @@ h2 {
 	}
 	.card-header {
 		padding: 20px;
+		box-shadow: none;
 		// text-align: center;
 	}
 	h2.question {
@@ -138,7 +137,6 @@ h2 {
 	.option-container {
 		padding: 20px;
 	}
-
 	.score-container {
 		background: #2F4F4F;
 		color: white;
@@ -147,7 +145,11 @@ h2 {
 		@include lato(16px, uppercase);
 	}
 }
-
+.wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
 .btn {
 	border: none;
 	display: block;
@@ -166,6 +168,18 @@ h2 {
 }
 #feedback {
 	margin-bottom: 15px;
+}
+.epilogue {
+	@include lato(10px, initial);
+	color: slategray;
+	.container {
+		background: #fff;
+		padding-bottom: 50px;
+	}
+	a {
+		color: slategray;
+		border-bottom: 1px dotted slategray;
+	}
 }
 
 .hidden {
