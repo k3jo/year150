@@ -317,6 +317,7 @@ h2 {
 .game-container .card-header {
   padding: 20px;
   box-shadow: none;
+  display: block;
 }
 
 .game-container h2.question {
