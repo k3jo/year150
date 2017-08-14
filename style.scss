@@ -66,11 +66,20 @@ h2 {
 		margin-left: -24px;
 		top: 50%;
 		margin-top: -32px;
+		letter-spacing: 1px;
 		/* Color fallback */
 		color: red;
 	/*	-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;*/
 	}
+}
+.hero .border-container :nth-child(2){
+	// color: red;
+	margin-bottom: -20px;
+}
+.hero .border-container :nth-child(3){
+	color: red;
+	margin-top: -20px;
 }
 
 
