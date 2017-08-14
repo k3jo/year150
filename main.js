@@ -80,7 +80,7 @@ app.findQuestion = function(lesson){
 //Populate the HTML
 app.populate = function(lesson){
 	app.$optionContainer.empty();
-	$('h2').text(app.lessonPlan[lesson].question).addClass('question');
+	$('h2').text(app.lessonPlan[lesson].question);
 	$('#score').text(app.userScore);
 
 	//shuffle the options
@@ -157,10 +157,19 @@ $('#again').on('click', function(e){
 	app.init();
 });
 
+//borders
+
+$(window).on('load', function(){
+	$('h1').hide().fadeIn(4000);
+	$('.start-container a').hide().fadeIn(2000);
+	$('.border').animate({
+		width: '100%',
+	},900);
+});
+
 
 app.init = function(){
 	app.currentLesson = 0;
-
 	app.findQuestion(0);
 }
 

@@ -6,6 +6,7 @@ h1, h2, h3, p {
 
 body{
 	font-family: 'Droid Serif', arial, serif;
+	text-align: center;
 }
 h2 {
 	font-family: 'Droid Serif', arial, serif;
@@ -21,19 +22,21 @@ h2 {
 		align-items: center;
 		justify-content: center;
 		align-content: center;
-		text-align: center;
-		.container div {
-			border-top: 3px solid #fff;
-			border-bottom: 3px solid #fff;
+		.border-container {
+			// border-top: 3px solid #fff;
+			// border-bottom: 3px solid #fff;
 			padding: 20px 0;
 			margin-bottom: 50px;
-			text-align: center;
 			display: inline-block;
+		}
+		.border {
+			display: inline-block;
+			// width: 100%;
+			background: #fff;
+			height: 5px;
 		}
 	}
 	h1 {
-		color: #fff;
-		text-transform: uppercase;
 		letter-spacing: 3px;
 		@include lato (50px, uppercase);
 		margin: -10px;
@@ -73,8 +76,7 @@ h2 {
 
 .game-container {
 	position: relative;
-	text-align: center;
-	.stripe {
+	.blade {
 		height: 300px;
 		background: rgba(0,128,128, 0.8);
 		margin-top: -40px;
@@ -84,7 +86,7 @@ h2 {
 		top: 0;
 		width: 100%;
 	}
-	.stripe2 {
+	.blade2 {
 		height: 300px;
 		background: rgba(199,21,133, 0.8);
 		margin-top: -40px;
@@ -92,7 +94,7 @@ h2 {
 		position: absolute;
 		width: 100%;
 	}
-	.stripe3 {
+	.blade3 {
 		height: 300px;
 		background: purple;
 		margin-top: -40px;
@@ -101,7 +103,7 @@ h2 {
 		top: 10px;
 		width: 100%;
 	}
-	.stripe4 {
+	.blade4 {
 		height: 300px;
 		background: goldenrod;
 		margin-top: -40px;
@@ -124,9 +126,6 @@ h2 {
 		box-shadow: none;
 		display: block;
 	}
-	h2.question {
-		text-align: center;
-	}
 	input {
 		margin: 10px 0;
 		cursor: pointer;
@@ -148,7 +147,6 @@ h2 {
 .wrapper {
 	max-width: 600px;
 	margin: 0 auto;
-	text-align: center;
 }
 .btn {
 	border: none;
